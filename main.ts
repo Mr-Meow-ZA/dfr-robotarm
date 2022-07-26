@@ -10,10 +10,10 @@ enum Servos {
     S6 = 0x03,
     S7 = 0x02,
     S8 = 0x01
-};
+}
 
 
-
+//% weight=100 block="dfrobo"
 namespace dfrobotarm
 {
 
@@ -48,7 +48,7 @@ export function incServo(snum: Servos, spos: number, minpos: number, maxpos: num
 export function getServoPos(ser:Servos):number{
 
     let val = pins.i2cReadNumber(ser, NumberFormat.UInt8BE);
-    return(val);
+    return(val)
 
 }
 
